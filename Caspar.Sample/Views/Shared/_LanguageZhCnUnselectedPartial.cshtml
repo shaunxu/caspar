@@ -1,0 +1,11 @@
+﻿<img style="border: none; width: 32px; height: 32px;" id="lang-selector-zh-cn" src="~/Content/zh-cn.unselected.png" alt="English" />
+
+<script type="text/javascript">
+    $("#lang-selector-zh-cn").hover(
+        function (evt) {
+            $(this).attr("src", "/Content/zh-cn.hover.png");
+        },
+        function (evt) {
+            $(this).attr("src", "/Content/zh-cn.unselected.png");
+        });
+</script>

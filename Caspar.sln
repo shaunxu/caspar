@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caspar", "Caspar\Caspar.csproj", "{18850D84-C553-4F75-9A0B-C467819117B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caspar.Sample", "Caspar.Sample\Caspar.Sample.csproj", "{C0FDEEB3-F6E0-41D1-AC96-E7D204E9268D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B30344DA-A5EA-4F92-A425-57D14912FB37}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\sample_db.sql = Scripts\sample_db.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18850D84-C553-4F75-9A0B-C467819117B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18850D84-C553-4F75-9A0B-C467819117B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18850D84-C553-4F75-9A0B-C467819117B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18850D84-C553-4F75-9A0B-C467819117B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0FDEEB3-F6E0-41D1-AC96-E7D204E9268D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FDEEB3-F6E0-41D1-AC96-E7D204E9268D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FDEEB3-F6E0-41D1-AC96-E7D204E9268D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FDEEB3-F6E0-41D1-AC96-E7D204E9268D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

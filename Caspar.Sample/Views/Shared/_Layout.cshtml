@@ -1,0 +1,53 @@
+﻿@using Caspar;
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_Layout_Title")</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink(Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_Layout_LogoHere"), "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="lang" style="float: right;">
+                        @Html.LanguageSelectorPartial("en-US", "_LanguageEnUsSelectedPartial", "_LanguageEnUsUnselectedPartial", null, null)
+                        @Html.LanguageSelectorPartial("zh-CN", "_LanguageZhCnSelectedPartial", "_LanguageZhCnUnselectedPartial", null, null)
+                    </section>                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink(Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_PageName_Home"), "Index", "Home")</li>
+                            <li>@Html.ActionLink(Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_PageName_About"), "About", "Home")</li>
+                            <li>@Html.ActionLink(Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_PageName_Contact"), "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_Layout_Title")</p>
+                </div>
+            </div>
+        </footer>
+
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

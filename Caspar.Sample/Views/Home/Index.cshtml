@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_HomeIndex_Title");
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Featured")
+            </p>
+        </div>
+    </section>
+}
+<h3>@Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetString("View_HomIndex_Suggest")</h3>
+<ol class="round">
+    <li class="one">
+        <h5>
+            @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_1_Title")
+        </h5>
+            @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_1_Val")
+    </li>
+
+    <li class="two">
+        <h5>
+            @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_2_Title")
+
+        </h5>
+        @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_2_Val")
+    </li>
+
+    <li class="three">
+        <h5>
+            @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_3_Title")
+
+        </h5>
+        @Caspar.ResourceProviders.LocalizationResourceProvider.Current.GetHtmlString("View_HomIndex_Suggest_3_Val")
+    </li>
+</ol>
